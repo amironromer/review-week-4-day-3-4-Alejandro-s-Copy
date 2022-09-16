@@ -38,11 +38,11 @@ luckyNumbers.append(friends)
 ###### print the new list out
 print(luckyNumbers)
 ###### print out the first item in the list
-
+print(luckyNumbers[1])
 ###### remove the last item of the new list
-
+luckyNumbers = luckyNumbers.remove(luckyNumbers[-1])
 ###### print the new list out without the last item
-
+print(luckyNumbers)
 ###### add three more items to the end of the list
 
 ###### print the last item in the new list
@@ -61,8 +61,9 @@ print(luckyNumbers)
 #####################################challenge 2#######################################################
 # Join the following list into a string, separating each item with a space. Use the appropriate list/string method, and display the result.
 word_list = ["Simple", "is", "better", "than", "complex."]
-
+print(' '.join(word_list))
 # Print the following text in uppercase, using the specific string method:
+print(' '.join(word_list).upper())
 
 text1 = "Especially in electronic communications, writing in all caps is equivalent to yelling."
 
@@ -70,11 +71,14 @@ text1 = "Especially in electronic communications, writing in all caps is equival
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
 
 text2 = "Never trust a computer you can't throw out a window"
-
+print(text2[8::3])
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
 
 text3 = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
 
+stringlength=len(text3)
+slicedString=text3[stringlength::-1] 
+print (slicedString)
 # Extract the first word of the following sentence using slicing, and display it on the screen:
 "Controlling complexity is the essence of programming"
 
