@@ -34,9 +34,9 @@ luckyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15]
 friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
 # instructions:
 ######join both lists together in a new list
-
+luckyNumbers.append(friends)
 ###### print the new list out
-
+print(luckyNumbers)
 ###### print out the first item in the list
 
 ###### remove the last item of the new list
